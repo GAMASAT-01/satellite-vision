@@ -8,10 +8,13 @@ Dada uma stream de imagens aéreas/espaciais contíguas e sequenciais sobre uma 
 
 Para cada imagem fazer um processo de predição por redes neurais que funciona assim:
 
+![](https://i.imgur.com/YeK60PZ.png)
+
 A partir da matriz gerada, fazer um mapeamento da matriz para uma outra matriz maior de mapa, e, a partir das imagens de input, compor numa camada abaixo desse mapa outro mapa com a média das imagens reais para poder fazer um overlay e mostrar o acidente em tempo real.
 
 Google earth permite coleta de dados como esses. Aqui estão alguns exemplos extraídos:
 
+![](https://i.imgur.com/Odgb5NO.png)
 
 Essas imagens foram coletadas pegando uma foto antiga e outra atual sobre o Mato Grosso e comparando a diferença (Structual Similarity) entre elas.
 
@@ -23,9 +26,11 @@ O treinamento consiste da geradora produzir uma imagem a partir do input e a dis
 
 Abaixo nós temos alguns exemplo de uma versão extremamente simples e pouco treinada desse modelo, onde a imagem da esquerda é o input, a do meio é a imagem que a rede neural gerou e a da direita, o resultado certo:
 
+![](https://i.imgur.com/uiTIMCN.png)
 
 Essa rede, porém, ainda necessita de muito treinamento e trabalho. Acompanhe o que acontece com uma imagem nova:
 
+![](https://i.imgur.com/CBrXbz4.png)
 
 Portanto essa solução me parece viável mas não está completa e o processo de melhorar esse modelo pode vir a consumir muito tempo. 
 
